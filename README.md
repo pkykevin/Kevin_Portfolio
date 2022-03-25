@@ -26,7 +26,7 @@ Using real dataset from Carsales, we will observe contributing features in categ
 6. compare those categorized data to see importance features compared to  individual makes and  discuss.
 
 ### Part 1. Dataset
-```
+```python
 dataset['price'].describe
 ```
 <img width="609" alt="image32" src="https://user-images.githubusercontent.com/32251175/160059949-3aa8d530-c2e9-4687-b273-7abab63c930b.png">
