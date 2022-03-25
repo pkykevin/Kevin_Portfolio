@@ -1,5 +1,5 @@
 # Kevin Portfolio                 
-Example data science portfolio
+Welcome to my data science portfolio. I am passionate about data analytics, data visualization, and behavioral economics.
 
 ## Project 1: Predictive models in Category based Carsales data sets
 The aim is to build predictive models to facilitate decision making for second hand car buyers and sellers. This project is implemented predictive models on actual data from Carsales second hand car sale site. 
