@@ -27,7 +27,7 @@ Using real dataset from Carsales, we will observe contributing features in categ
 
 ### Part 1. Dataset
 ```python
-dataset['price'].describe
+dataset['price'].describe()
 ```
 <img width="609" alt="image32" src="https://user-images.githubusercontent.com/32251175/160059949-3aa8d530-c2e9-4687-b273-7abab63c930b.png">
 <img width="418" alt="image33" src="https://user-images.githubusercontent.com/32251175/160059965-77b5c48f-323c-4b13-8094-c9a9ff8d848a.png">
