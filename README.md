@@ -1,4 +1,4 @@
-# Kevin ParK Portfolio                 
+# Kevin Park Portfolio                 
 Welcome to my data science portfolio. I am passionate about data analytics, data visualization, and behavioral economics.
 
 ## Predictive models in Category based Data analysis using Carsales data sets
