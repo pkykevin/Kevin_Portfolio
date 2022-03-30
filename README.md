@@ -1,7 +1,7 @@
 # Kevin Park Portfolio               
 Welcome to my data science portfolio. I am passionate about data analytics, data visualization, and behavioral economics.
 
-## Project 1: Price prediction and understanding contributing features for used car based Carsale data sets
+## Project 1: Carsales price prediction and understanding contributing features
 
 * The aim of this project is to build predictive models to facilitate decision making for second hand car buyers and sellers. The project implemented predictive models on actual data from [Carsales](https://www.carsales.com.au/). 
 * Multiple Linear, Random Forest and Neural Network predictive modelling techniques were employed to create predictive models. 
