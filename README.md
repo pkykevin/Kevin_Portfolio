@@ -1,4 +1,4 @@
-# Kevin Park Portfolio               
+# Kevin Park          
 Welcome to my data science portfolio. I am passionate about data analytics, data visualization, and behavioral economics.
 
 ## Project 1: Carsales price prediction and understanding contributing features
