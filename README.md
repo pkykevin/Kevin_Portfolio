@@ -20,7 +20,7 @@ The sample dataset of Toyota Corolla extracted from Carsales second-hand car sal
 
 Following is an example of Toyota Corolla dataset in csv file extracted from Carsales website.
 
-![2](https://user-images.githubusercontent.com/32251175/160815884-83753e3f-022a-46d5-ae8a-5e5dbcb2e96e.PNG)
+![2](https://user-images.githubusercontent.com/32251175/160816291-6bd7b2f3-5a7f-4ca5-b354-d0db8e526d1b.PNG)
 
 #### B. Data exploration
 
