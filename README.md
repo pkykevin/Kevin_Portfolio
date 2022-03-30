@@ -3,7 +3,7 @@ Welcome to my data science portfolio. I am passionate about data analytics, data
 
 ## Project 1: Predictive models in Category based Data analysis using Carsales data sets
 
-The aim of this project is to build predictive models to facilitate decision making for second hand car buyers and sellers. The project implemented predictive models on actual data from [carsales Australia](https://www.carsales.com.au/). Multiple Linear, Random Forest and Neural Network predictive modelling techniques were employed to create predictive models. Moreover, we drill down car categories to discover the price influencing features on different car makes. 
+The aim of this project is to build predictive models to facilitate decision making for second hand car buyers and sellers. The project implemented predictive models on actual data from [Carsales](https://www.carsales.com.au/). Multiple Linear, Random Forest and Neural Network predictive modelling techniques were employed to create predictive models. Moreover, we drill down car categories to discover the price influencing features on different car makes. 
 
 ### Part 1. Dataset
 
