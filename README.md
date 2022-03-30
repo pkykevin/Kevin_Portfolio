@@ -1,9 +1,9 @@
 # Kevin Park          
 Welcome to my data science portfolio. I am passionate about data analytics, data visualization, and behavioral economics.
 
-## Project 1 - Predictive models in Category based Data analysis based on [Carsales](https://www.carsales.com.au) datasets
+## Project 1 - Data analysis with predictive models in category based on [Carsales](https://www.carsales.com.au) datasets
 
-* This project is to build a tool to analyse, compare, predict and visualise the important features and price of different car categories or makes 
+* This project is to build a tool to analyse, compare, predict and visualise the important features and price of different car categories or makes.
 * The aim of this project is to build such predictive models to facilitate decision making for second hand car buyers and sellers.
 * Multiple Linear, Random Forest and Neural Network predictive modelling techniques were employed to create predictive models.
 * The study implemented predictive models on actual data from [Carsales](https://www.carsales.com.au) website.
