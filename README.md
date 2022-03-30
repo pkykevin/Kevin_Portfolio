@@ -49,9 +49,10 @@ In this part, each of the selected variables are explored against the target var
 
 The figures below shows scatter plot distribution of the selected variables against price prepared in Python. 
 
-![8](https://user-images.githubusercontent.com/32251175/160744242-4b10c001-76b0-4f6f-be19-753f16e2b3e4.PNG)
-![9](https://user-images.githubusercontent.com/32251175/160744252-f10e0fac-c265-4f32-8034-1b33a7ee61eb.PNG)
-![10](https://user-images.githubusercontent.com/32251175/160744258-6b33dfd2-e98f-4fa9-b51d-c6a2165a500f.PNG)
+![8](https://user-images.githubusercontent.com/32251175/160744621-21e95cf7-cbe2-42e1-bccf-e5aa95449bbc.PNG)
+![9](https://user-images.githubusercontent.com/32251175/160744623-25a97ba2-d88e-4850-9fdb-2f66e0b35883.PNG)
+![10](https://user-images.githubusercontent.com/32251175/160744629-1ce1f4a6-aa21-47c7-8361-89ba363703d9.PNG)
+
 
 
 
