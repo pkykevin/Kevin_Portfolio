@@ -71,3 +71,17 @@ This is the process of building a model used backward elimination.
 
 From step 1, select a significance level to stay in the model, for example, SL = 0.05 applied in this method. Step 2, fit the full model with all possible predictors. After you fit the model, you will see the one with the highest p-value, so if p-value is greater than significance level then you go to step 4. Step 4 is to remove that predictor. It is to remove basically the variable that has the highest p-value. And step 5, you fit the model without this variable. The model will be rebuild with the fewer number of variables. In step 5, continue to fit the model again with one less variable. This process will keep doing that until it come to a point where the variable of that p-value is still less than significance level, then go to FIN (means model is ready).
 
+##### Regression Model 1
+
+The first regression model technique predictive model has included all of the attributes in the selected variables identified previously section. This model resulted an adjusted R-squared of 0.899 and Root Mean Square Error (RMSE) of 2956.31. The regression and model evaluation result is shown below.
+
+![13](https://user-images.githubusercontent.com/32251175/160751645-fdd661fe-92a0-40f7-9c8f-3ad3e4070c1a.PNG)
+![14](https://user-images.githubusercontent.com/32251175/160751649-b2d6c695-884b-4f73-8bd0-8a858d144810.PNG)
+
+##### Regression Model 2
+
+The attributes applied for regression model 2 comprises Age_08_04, KM, HP, Met_Color, Weight, Mfr_Guarantee, BOVAG_Guarantee, Guarantee_Period, ABS, Boardcomputer, Central_Lock, Metallic_Rim. This model resulted an adjusted R-squared of 0.870 and Root Mean Square Error (RMSE) of 1445.83. The regression and model evaluation result is shown below.
+
+![15](https://user-images.githubusercontent.com/32251175/160751824-210cb1d4-f8f0-48d6-8ce3-fff7291973be.PNG)
+![16](https://user-images.githubusercontent.com/32251175/160751829-25aa1b1f-a286-45ca-892d-a19b98df95bd.PNG)
+
