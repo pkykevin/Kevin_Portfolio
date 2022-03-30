@@ -3,7 +3,9 @@ Welcome to my data science portfolio. I am passionate about data analytics, data
 
 ## Project 1: Price prediction and understanding contributing features (Carsales data sets)
 
-The aim of this project is to build predictive models to facilitate decision making for second hand car buyers and sellers. The project implemented predictive models on actual data from [Carsales](https://www.carsales.com.au/). Multiple Linear, Random Forest and Neural Network predictive modelling techniques were employed to create predictive models. Moreover, we drill down car categories to discover the price influencing features on different car makes. 
+* The aim of this project is to build predictive models to facilitate decision making for second hand car buyers and sellers. The project implemented predictive models on actual data from [Carsales](https://www.carsales.com.au/). 
+* Multiple Linear, Random Forest and Neural Network predictive modelling techniques were employed to create predictive models. 
+* We drill down car categories to discover the price influencing features on different car makes. 
 
 ### Part 1. Dataset
 
@@ -53,6 +55,19 @@ The figures below shows scatter plot distribution of the selected variables agai
 ![9](https://user-images.githubusercontent.com/32251175/160744623-25a97ba2-d88e-4850-9fdb-2f66e0b35883.PNG)
 ![10](https://user-images.githubusercontent.com/32251175/160744629-1ce1f4a6-aa21-47c7-8361-89ba363703d9.PNG)
 
+### Part 2. Regression Technique using Multiple linear regression
 
+#### A. Regression models
 
+In this section, multiple linear regression as a technique is applied for predictive modelling of the case study on Toyota Corolla dataset. As the main task for the predictive modelling is to predict the selling price of used Toyota Corolla using the variables selected in part 1 of this report, therefore, price variable will be used as target variable. 
+
+Prior to building the linear regression models, the dataset was partitioned with ⅔ as the training data sample and ⅓ as the testing data. The trained dataset comprises of 957 training data and 479 testing data. 
+
+![11](https://user-images.githubusercontent.com/32251175/160744920-32d11ce0-c265-4fa9-8eae-8d47c558c9c1.PNG)
+
+This is the process of building a model used backward elimination.
+
+![12](https://user-images.githubusercontent.com/32251175/160744984-d3fa466e-8322-4ff6-bf02-019a59a07f5d.PNG)
+
+From step 1, select a significance level to stay in the model, for example, SL = 0.05 applied in this method. Step 2, fit the full model with all possible predictors. After you fit the model, you will see the one with the highest p-value, so if p-value is greater than significance level then you go to step 4. Step 4 is to remove that predictor. It is to remove basically the variable that has the highest p-value. And step 5, you fit the model without this variable. The model will be rebuild with the fewer number of variables. In step 5, continue to fit the model again with one less variable. This process will keep doing that until it come to a point where the variable of that p-value is still less than significance level, then go to FIN (means model is ready).
 
