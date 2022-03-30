@@ -14,13 +14,13 @@ Welcome to my data science portfolio. I am passionate about data analytics, data
 
 #### A. Data extraction
 
-The sample dataset of Toyota Corolla extracted from Carsales second-hand car sale website (https://www.carsales.com.au/).  Python’s Beautiful Soup v4 library used to extract data into a form that can be imported. Following steps are the algorithms of web scraping using Beautiful Soup module and extracted car features from Carsales website. 
+The sample dataset of Toyota Corolla extracted from [Carsales](https://www.carsales.com.au).  Python’s Beautiful Soup v4 library used to extract data into a form that can be imported. Following steps are the algorithms of web scraping using Beautiful Soup module and extracted car features from Carsales website. 
 
 ![1](https://user-images.githubusercontent.com/32251175/160815871-c6367950-716f-4555-ada2-23d1bc7b30dd.PNG)
 
 Following is an example of Toyota Corolla dataset in csv file extracted from Carsales website.
 
-![2](https://user-images.githubusercontent.com/32251175/160816291-6bd7b2f3-5a7f-4ca5-b354-d0db8e526d1b.PNG)
+![2](https://user-images.githubusercontent.com/32251175/160816821-fb5064f4-2b00-4665-a286-28ab249f6806.PNG)
 
 #### B. Data exploration
 
@@ -28,4 +28,5 @@ The dataset comprises of 21 attributes related to 2030 sold Toyota Corolla cars.
 
 As we have identified price as the target variable, the research has examined the prices of the Toyota Corolla vehicles by calculating the summary statistic and prepared the histogram, density and box plot of the price variable in the Toyota Corolla dataset. The price is a continuous numerical variable. The following are results of summary statistics and plots created in Python.
 
-![3](https://user-images.githubusercontent.com/32251175/160816089-f25690f1-1691-4fda-96ea-62aebbd8c2e0.PNG)
+![3](https://user-images.githubusercontent.com/32251175/160816828-5deb7f84-9c75-4bb6-9d09-b03a93622880.PNG)
+
