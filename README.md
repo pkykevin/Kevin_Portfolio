@@ -1,5 +1,5 @@
 # Kevin Park          
-Welcome to my data science portfolio. I am passionate about data analytics, data visualization, and behavioral economics.
+Welcome to my data science portfolio. I am passionate about data analytics, data visualization, and building machine learnig models.
 
 ## Project 1 - Predictive models in category based on [Carsales](https://www.carsales.com.au) datasets
 
