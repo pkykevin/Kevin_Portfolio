@@ -62,3 +62,36 @@ The correlation plot below is prepared using the heatmap function after the firs
 
 Following the correlation between variables shown above, dimensionality reduction is performed by removing high cross-correlation variables. Followed with a merge of target variable ‘Price’. It is also noted year, km, fuel_cost variables have high-correlation, which shows that they are important variables which later will be used in predictive modelling. Variable year, km have negative relationship with the sale price, which implies that older cars and long km are cheaper. Variable weight, emission_standards, engine_size and airbags implying increase the weight of the car has a positive effect on the sale price. Moreover, another features like fuel_capacity and fuel_cost have positive linear relationship implying includes these features have positive effect on the sale price.
 
+### Part 2. Regression Technique using Multiple linear regression
+
+#### a. Regression models 
+
+In this section, multiple linear regression as a technique is applied for predictive modelling of the case study on Toyota Corolla dataset. As the main task for the predictive modelling is to predict the selling price of used Toyota Corolla using the variables selected in Part 1, therefore, price variable will be used as target variable. 
+
+Prior to building the linear regression models, the dataset was partitioned with ⅔ as the training data sample and ⅓ as the testing data. The trained dataset comprises of 1262 training data and 632 testing data. 
+
+![9](https://user-images.githubusercontent.com/32251175/160988349-5ac285ed-475b-4df2-9f0e-586b7274498c.PNG)
+
+This is the process of building a model used backward elimination. 
+
+![10](https://user-images.githubusercontent.com/32251175/160988358-2e4a5ce5-08ef-4bb1-92db-23ba51ecc3f9.PNG)
+
+From step 1, select a significance level to stay in the model, for example, SL = 0.05 applied in this method. Step 2, fit the full model with all possible predictors. After you fit the model, you will see the one with the highest p-value, so if the p-value is greater than the significance level then you go to step 4. Step 4 is to remove that predictor. It is to remove basically the variable that has the highest p-value. And step 5, you fit the model without this variable. The model will be rebuilt with the fewer number of variables. In step 5, continue to fit the model again with one less variable. This process will keep doing that until it comes to a point where the variable of that p-value is still less than the significance level, then go to FIN (means model is ready). 
+
+##### 1) Regression Model 1.
+
+The first regression model technique predictive model has included all of the attributes in the selected variables identified previously section. This model resulted in an adjusted R-squared of 0.817 and Root Mean Square Error (RMSE) of 1856.29. The regression and model evaluation result is shown below.
+
+![11](https://user-images.githubusercontent.com/32251175/160988860-32d4a989-3949-48c9-803f-86c5734dcb46.PNG)
+![12](https://user-images.githubusercontent.com/32251175/160988938-758c7e48-3a6c-455b-990f-ffb598c68772.PNG)
+
+This is a comparison of predicted values with actual values and the scatter plot for regression model 1.
+
+![13](https://user-images.githubusercontent.com/32251175/160988998-9d18eeea-fb6b-4f6c-825a-45842f4d4c58.PNG)
+
+##### 2) Regression Model 2.
+
+The attributes applied for regression model 2. comprises age, km, airbags, engine_size, gears, emission_standards, weight and fuel_cost. This model resulted in an adjusted R-squared of 0.817 and Root Mean Square Error (RMSE) of 1841.17. The regression and model evaluation result is shown below.
+
+
+
