@@ -82,16 +82,24 @@ From step 1, select a significance level to stay in the model, for example, SL =
 
 The first regression model technique predictive model has included all of the attributes in the selected variables identified previously section. This model resulted in an adjusted R-squared of 0.817 and Root Mean Square Error (RMSE) of 1856.29. The regression and model evaluation result is shown below.
 
-![11](https://user-images.githubusercontent.com/32251175/160989357-c37f891a-0412-43bc-8dd4-7e9cc72b3397.PNG)
-![12](https://user-images.githubusercontent.com/32251175/160988938-758c7e48-3a6c-455b-990f-ffb598c68772.PNG)
+![11](https://user-images.githubusercontent.com/32251175/160989844-b96bd704-4c00-4d0f-8d3e-0bea6ca5e2ff.PNG)
+
 
 This is a comparison of predicted values with actual values and the scatter plot for regression model 1.
 
-![13](https://user-images.githubusercontent.com/32251175/160988998-9d18eeea-fb6b-4f6c-825a-45842f4d4c58.PNG)
+![12](https://user-images.githubusercontent.com/32251175/160989880-9a5e5d5f-d4e8-413f-acaa-a101ca5799b5.PNG)
 
 ##### 2) Regression Model 2.
 
 The attributes applied for regression model 2. comprises age, km, airbags, engine_size, gears, emission_standards, weight and fuel_cost. This model resulted in an adjusted R-squared of 0.817 and Root Mean Square Error (RMSE) of 1841.17. The regression and model evaluation result is shown below.
 
+![13](https://user-images.githubusercontent.com/32251175/160990029-dbcf061c-2cf8-47f9-b6c7-79baf2962b8e.PNG)
+
+This is a comparison of predicted values with actual values and the scatter plot for regression model 2.
+
+![14](https://user-images.githubusercontent.com/32251175/160990039-e3961b8d-a212-4c8e-bb79-3c2a90a653e1.PNG)
+
+
+##### 3) Regression Model 3.
 
 
