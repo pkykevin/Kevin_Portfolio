@@ -82,7 +82,7 @@ From step 1, select a significance level to stay in the model, for example, SL =
 
 The first regression model technique predictive model has included all of the attributes in the selected variables identified previously section. This model resulted in an adjusted R-squared of 0.817 and Root Mean Square Error (RMSE) of 1856.29. The regression and model evaluation result is shown below.
 
-![11](https://user-images.githubusercontent.com/32251175/160988860-32d4a989-3949-48c9-803f-86c5734dcb46.PNG)
+![11](https://user-images.githubusercontent.com/32251175/160989357-c37f891a-0412-43bc-8dd4-7e9cc72b3397.PNG)
 ![12](https://user-images.githubusercontent.com/32251175/160988938-758c7e48-3a6c-455b-990f-ffb598c68772.PNG)
 
 This is a comparison of predicted values with actual values and the scatter plot for regression model 1.
