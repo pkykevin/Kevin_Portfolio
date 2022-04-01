@@ -1,7 +1,7 @@
 # Kevin Park          
 Welcome to my data science portfolio. I am passionate about data analytics, data visualization, and building machine learnig models.
 
-## Project 1 - Predictive models in category based on [Carsales](https://www.carsales.com.au) datasets
+## Predictive models in category based on [Carsales](https://www.carsales.com.au) datasets
 
 * This project is to build a tool to analyse, compare, predict and visualize the important features and price of different car categories or makes.
 * Build such predictive models to facilitate decision making for second hand car buyers and sellers.
@@ -223,4 +223,57 @@ The table above summarises the results of four neural network predictive models,
 
 The graph above summarizes the results of three regression techniques (multiple linear/random decision tree/neural network) to predict car sales price from Toyota Corolla dataset. The accuracy of the predictive models are compared based on their RMSE. In terms of efficiency, the random forest and neural network regression technique is much more efficient compared to the multiple linear regression. From all of the above predictive models, the random forest regression technique model 1. has the lowest RMSE of 1375.09. The random decision tree algorithms also provide importance features and the relationships between the different variables, which helps to create more accurate models. One key highlights shows that 3 key features: Age, KM and Weight are the most importance features. Moreover, it appears that the results from random decision slightly outperformed the results from neural network models, by providing a more lower of RMSE. Consequently, the random forest tree technique model appears to be more suitable predictive modelling for the Toyota Corolla dataset from Carsales.
 
+### Part 2. Challenge: Categorizing the Used Cars
+
+The car brand names and make for a vehicle tells a lot about the level of prestige of a car, for example, Mercedes-Benz and BMW are luxury car makers, which can be in the luxury segment. In this research, we will categorize and test on used car based on different in the level of prestige. The 3 categories are Luxury Sports, Luxury and Economy. The proposed categories and their respective makes are as follows:
+
+![37](https://user-images.githubusercontent.com/32251175/161197051-c9b87899-fa94-4e98-8697-03012117c4fa.PNG)
+
+#### A. Luxury Sports
+
+The dataset comprises of 21 attributes related to 790 Luxury Sports cars which contains 3 car makes (100 samples from Lamborghini, 109 from Ferrari and 581 from Porsche where extracted from Carsales site). 
+
+##### 1. Multiple Linear Regression
+
+###### a. Regression Model 1.
+
+The first regression model technique predictive model has included all of the attributes in the selected variables identified previously section. This model resulted in a Root Mean Square Error (RMSE) of 104136.05. The regression and model evaluation result is shown below.
+
+![38](https://user-images.githubusercontent.com/32251175/161198361-e98a9e5e-80ec-4bea-a0ef-b5a6b7568d4d.PNG)
+
+###### b. Regression Model 2.
+
+The attributes applied for regression model 2. comprises Age, KM, Airbags, Engine Size, Cylinders, Gears, Fuel Capacity, Emission Standard, Weight, Doors, Seat Capacity and Fuel Cost. This model resulted in a Root Mean Square Error (RMSE) of 109712.18. The regression and model evaluation result is shown below.
+
+![39](https://user-images.githubusercontent.com/32251175/161198425-34fee549-8df6-433c-a22d-4c6ec46ad3a2.PNG)
+
+###### c. Regression Model 3.
+
+The attributes applied for regression model 3. comprises KM, Engine Size and Weight. This model resulted in a Root Mean Square Error (RMSE) of 117433.77. The regression and model evaluation result is shown below.
+
+![40](https://user-images.githubusercontent.com/32251175/161198466-fed201bc-8bb5-4955-8392-63fb68343ebe.PNG)
+
+##### 2. Random Forest Regression
+
+As can be seen from the graph, feature Importance for Luxury Sports shows that KM and Engine Size are the highest features contributing to the final price followed by Weight, Doors and Fuel cost.
+
+![41](https://user-images.githubusercontent.com/32251175/161198537-628cd5b3-4b3e-417f-82ba-52fb8a963bd1.PNG)
+
+###### a. Regression Model 1.
+
+The first decision tree predictive model is created by applying all selected variables and resulted with RMSE of 45260.87. The regression and model evaluation result is shown below.
+
+![42](https://user-images.githubusercontent.com/32251175/161198618-a86b2ff0-c766-490a-bfb2-194dc9e306c4.PNG)
+
+###### b. Regression Model 2.
+
+The second decision tree predictive model is created by applying features that have an importance of more than 0.01. There are 9 selected variables of feature importances, which comprises of Age, KM, Airbags, Engine Size, Cylinders, Fuel Capacity, Weight, Doors and Fuel Cost. This resulted with RMSE of 45771.93. The regression and model evaluation result is shown below.
+
+![43](https://user-images.githubusercontent.com/32251175/161198657-7500e9ee-5356-4467-b947-3f4079862822.PNG)
+
+###### c. Regression Model 3.
+
+The third decision tree predictive model is created by applying features that have an importance of more than 0.05. There are three selected variables of feature importances, which comprises of KM, Engine Size and Weight. This resulted with RMSE of 57912.42. The regression and model evaluation result is shown below.
+
+![44](https://user-images.githubusercontent.com/32251175/161198687-bf660474-5821-49f7-8c5a-de38b3b329c7.PNG)
 
