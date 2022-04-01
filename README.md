@@ -1,6 +1,5 @@
 # Kevin Park          
-Welcome to my data science portfolio. I am passionate about data analytics, data visualization, and building machine learnig models.
-
+Welcome to my data science portfolio. I am passionate about data analytics, data visualization, and machine learning that can provide insights and solve real-world problems.
 ## Predictive models in category based on Carsales datasets
 
 * This project is to build a tool to analyse, compare, predict and visualize the important features and price of different car categories or makes.
