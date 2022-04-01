@@ -276,3 +276,38 @@ The third decision tree predictive model is created by applying features that ha
 
 ![44](https://user-images.githubusercontent.com/32251175/161198687-bf660474-5821-49f7-8c5a-de38b3b329c7.PNG)
 
+##### 3. Neural Network Regression
+
+###### a. Regression Model 1.
+
+The first neural network predictive model is created by applying all selected variables. This resulted with RMSE of 44474.13. The regression and model evaluation result is shown below.
+
+![45](https://user-images.githubusercontent.com/32251175/161207031-54ed7455-a7c3-4515-863d-f58800b6ba1e.PNG)
+
+###### b. Regression Model 2.
+
+The second neural network predictive model is created by applying selected variables from random tree regression model 2, which comprises Age, KM, Airbags, Engine Size, Cylinders, Fuel Capacity, Weight, Doors, Fuel Cost. This resulted with RMSE of 38792.73. The regression and model evaluation result is shown below.
+
+![46](https://user-images.githubusercontent.com/32251175/161207108-fd1b38ce-4ff2-45bf-a896-c4d8896cee70.PNG)
+
+###### c. Regression Model 3.
+
+The third neural network predictive model is created by applying selected variables from random tree regression model 3, which comprises KM, Engine Size and Weight. The regression and model evaluation result is shown below.
+
+![47](https://user-images.githubusercontent.com/32251175/161207176-8132bb87-e84d-4a3e-aa1b-9735d0ab9f21.PNG)
+
+##### 4. Model Comparison
+
+![48](https://user-images.githubusercontent.com/32251175/161207284-b9b01691-fc7f-4cf5-afcc-577d040873b4.PNG)
+
+![49](https://user-images.githubusercontent.com/32251175/161207384-ce927615-5c6e-491d-b363-0a6d1f308bde.PNG)
+
+The graph above summarizes the results of three regression techniques (multiple linear/random decision tree/neural network) to predict car sales price from Luxury Sports dataset. The accuracy of the predictive models are compared based on their RMSE. In terms of efficiency, the random forest and neural network regression technique is much more efficient compared to the multiple linear regression. From all of the above predictive models, the neural network regression technique model 2. has the lowest RMSE of 38792. Random forest shows that KM and Engine Size are the most important features. Moreover, it appears that the results from neural network outperformed the results from random forest models, by providing a more lower of RMSE. Consequently, the neural network technique model appears to be more suitable predictive modelling for the Luxury Sports dataset from Carsales.
+
+![50](https://user-images.githubusercontent.com/32251175/161207483-99ba48ec-b104-4613-9bd4-d13dad558365.PNG)
+
+The graph above illustrates all results of three regression techniques (multiple linear/random decision tree/neural network) to predict car sales price from Luxury Sports, Lamborghini and Ferrari dataset. The accuracy of the predictive models are compared based on their RMSE. When we go deep into more specific car makes, for example, Lamborghini and Ferrari in Luxury Sports. As you see from Luxury Sports, neural network outperform multiple linear and random forest, however, random forest and neural network performs similar in Lamborghini dataset. From Ferrari dataset, it appears that the result from neural network Model 1. outperformed all results from multiple linear and random forest, by providing a much more lower of RMSE. However, all multiple linear regression models appears lower RMSE than Random Forest models in Ferrari Dataset. Overall, the neural network technique model appears to be more suitable predictive modeling for all Luxury Sports, Lamborghini and Ferrari cars. 
+
+![51](https://user-images.githubusercontent.com/32251175/161207545-71c46221-e501-4980-8b7f-35f5035ad177.PNG)
+
+The charts above shows all the feature importance using Random Forest regression, compared with Luxury Sports, Lamborghini and Ferrari car makes. The luxury sports data shows that KM and Engine Size are the most influential features to predict car sales price. However, Lamborghini dataset appears that Engine Size is a significant factor contributing to the price more than KM. The weight and age of used cars are the next important characteristics in Lamborghini dataset. On the other hand, it appears that the most substantial features of used cars in Ferrari dataset are Age and KM, not Engine Size. As you can see, most of the Luxury Sports includes Lamborghini car makes, KM and Engine Size are the crucial features of used car sales, but not for Ferrari car makes. Overall, these charts shows that all Luxury Sports, Lamborghini and Ferrari have different car factors vital to the used car prices. 
