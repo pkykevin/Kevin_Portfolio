@@ -4,11 +4,11 @@ Welcome to my data science portfolio. I am passionate about data analytics, data
 ## Project 1 - Predictive models in category based on [Carsales](https://www.carsales.com.au) datasets
 
 * This project is to build a tool to analyse, compare, predict and visualize the important features and price of different car categories or makes.
-* The aim is to build such predictive models to facilitate decision making for second hand car buyers and sellers.
+* First, we will build such predictive models to facilitate decision making for second hand car buyers and sellers.
 * Multiple Linear, Random Forest and Neural Network predictive modelling techniques were employed to create predictive models.
 * The study implemented predictive models on actual data from [Carsales](https://www.carsales.com.au) website.
-* We will observe contributing features in category into different levels of prestige - luxury sports, luxury and economy cars.
-* We also drill down car categories to discover the price influencing features on different car makes.
+* Second, we will observe contributing features in category into different levels of prestige - luxury sports, luxury and economy cars.
+* Third, we drill down car categories to discover the price influencing features on different car makes.
 
 ### Part 1. Dataset
 
@@ -132,5 +132,40 @@ Decision trees makes split that maximize the decrease in impurity. By calculatin
 As can be seen from the graph, feature importance from Toyota Corolla shows that Age and KM are the highest features contributing to the final price followed by weight, engine size and fuel cost.
 
 ##### 1) Regression Model 1.
+
+The first decision tree predictive model is created by applying all selected variables and resulted with RMSE of 1375.09. The python script and model evaluation result shown below.
+
+![20](https://user-images.githubusercontent.com/32251175/161189084-c98cd672-de55-437a-a612-dc9f6fb81f14.PNG)
+
+This is a comparison of predicted values with actual values and the scatter plot for decision tree regression model 1.
+
+![21](https://user-images.githubusercontent.com/32251175/161189116-ea432a6a-fb86-425a-8e09-f43cb687390d.PNG)
+
 ##### 2) Regression Model 2.
+
+The second decision tree predictive model is created by applying features that have an importance of more than 0.01. There are 8 selected variables of feature importances, which comprises of age, km, airbags, engine_size, gears, emission_standards, weight and fuel_cost. This resulted with RMSE of 1383.16. The python script, feature importance and model evaluation result shown below.
+
+![22](https://user-images.githubusercontent.com/32251175/161189187-4a5bff2a-69ac-4859-bf5f-57fb4c294054.PNG)
+
+This is a comparison of predicted values with actual values and the scatter plot for decision tree regression model 2.
+
+![23](https://user-images.githubusercontent.com/32251175/161189219-1ca5ba1f-9549-4f5e-a414-6e7387f048e0.PNG)
+
 ##### 3) Regression Model 3.
+
+The third decision tree predictive model is created by applying features that have an importance of more than 0.05. There are 3 selected variables of feature importances, which comprises of age, km and weight. This resulted with RMSE of 1581.61. The python script, feature importance and model evaluation result shown below.
+
+![24](https://user-images.githubusercontent.com/32251175/161189289-4577a8a1-c511-4b15-9894-bc7fad52c336.PNG)
+
+This is a comparison of predicted values with actual values and the scatter plot for decision tree regression model 3.
+
+
+This is a comparison of predicted values with actual values and the scatter plot for decision tree regression model 3.
+
+![25](https://user-images.githubusercontent.com/32251175/161189336-ee022f7b-d9f8-4086-b61e-45fa92dd581d.PNG)
+
+#### b. Evaluation
+
+![26](https://user-images.githubusercontent.com/32251175/161189396-d2950387-bca6-4e80-8e39-29537439da47.PNG)
+
+The table above summarises the results of four random decision tree predictive models, with price as the target variable. As explained in regression model evaluation, a lower RMSE is more preferred, which implies that the random decision regression model 1 is the most optimal decision tree regression predictive model. However, it is important to note that model 3 includes only age, km and weight, which may not be ideal for actual predictive model.
