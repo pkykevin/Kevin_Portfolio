@@ -4,11 +4,11 @@ Welcome to my data science portfolio. I am passionate about data analytics, data
 ## Project 1 - Predictive models in category based on [Carsales](https://www.carsales.com.au) datasets
 
 * This project is to build a tool to analyse, compare, predict and visualize the important features and price of different car categories or makes.
-* First, we will build such predictive models to facilitate decision making for second hand car buyers and sellers.
+* Build such predictive models to facilitate decision making for second hand car buyers and sellers.
 * Multiple Linear, Random Forest and Neural Network predictive modelling techniques were employed to create predictive models.
 * The study implemented predictive models on actual data from [Carsales](https://www.carsales.com.au) website.
-* Second, we will observe contributing features in category into different levels of prestige - luxury sports, luxury and economy cars.
-* Third, we drill down car categories to discover the price influencing features on different car makes.
+* Observe contributing features in category into different levels of prestige - luxury sports, luxury and economy cars.
+* Drill down car categories to discover the price influencing features on different car makes.
 
 ### Part 1. Dataset
 
@@ -169,3 +169,58 @@ This is a comparison of predicted values with actual values and the scatter plot
 ![26](https://user-images.githubusercontent.com/32251175/161189396-d2950387-bca6-4e80-8e39-29537439da47.PNG)
 
 The table above summarises the results of four random decision tree predictive models, with price as the target variable. As explained in regression model evaluation, a lower RMSE is more preferred, which implies that the random decision regression model 1 is the most optimal decision tree regression predictive model. However, it is important to note that model 3 includes only age, km and weight, which may not be ideal for actual predictive model.
+
+### Part 4. Regression Technique using Neural Network
+
+#### a. Regression models
+
+In this section, neural network technique is applied for predictive modelling of Toyota Corolla dataset. The graph below shows what its looks like in neural network regression (can see some attributes as Inputs(Is) and one output layer which is the Price used Toyota Corollas) The Bs are biases introduced.
+
+![27](https://user-images.githubusercontent.com/32251175/161194432-b0d21289-4cda-4269-843f-239f990e962e.PNG)
+
+Prior to building the neural network regression models, the dataset was partitioned with ⅔ as the training data sample and ⅓ as the testing data. The trained dataset comprises of 1262 training data and 632 testing data. The model optimizes in multilayer perception layer, and the number of neurons (100, 100) applied in the hidden layer(Hs). Then a seed value of 42 used to generate random sampling dataset. Neural network is in general hard to see which input features are relevant and which are not. The reason for this is that each input feature has multiple coefficients that are linked to it - each corresponding to one node of the first hidden layer. Adding additional hidden layers makes it even more complicated to determine how big of an impact the input feature has on the final prediction. On the other hand, for linear models it is very straightforward since each feature has a corresponding coefficient and its magnitude directly determines how big of an impact it has in prediction. This research uses features selected from linear regression models (where reduced the number of features in model 1, 2 and 3) for neural network. 
+
+##### 1) Regression Model 1.
+
+The first neural network predictive model is created by applying all selected variables. This resulted with RMSE of 1495.58. The python script and model evaluation shown below.
+
+![28](https://user-images.githubusercontent.com/32251175/161194560-09fe6980-7b5e-4669-b515-74103faa75e4.PNG)
+
+This is a comparison of predicted values with actual values and the scatter plot for neural network regression model 1.
+
+![29](https://user-images.githubusercontent.com/32251175/161194601-87516ff7-91bb-499b-b587-cb16bb52cb25.PNG)
+
+##### 2) Regression Model 2.
+
+The second neural network predictive model is created by applying selected variables from random regression model 2, which comprises Age, Km, Airbags, Engine Size, Gears, Emission Standards, Weight and Fuel Cost. This resulted with RMSE of 1520.42. The python script and model evaluation shown below.
+
+![30](https://user-images.githubusercontent.com/32251175/161194660-1c2f3c9f-92e3-47a5-9ea6-b36b7a136ddb.PNG)
+
+This is a comparison of predicted values with actual values and the scatter plot for neural network regression model 2.
+
+![31](https://user-images.githubusercontent.com/32251175/161194707-e1094b17-5630-4a8a-b8e0-4a44dbf49a39.PNG)
+
+##### 3) Regression Model 3.
+
+The third neural network predictive model is created by applying selected variables from linear regression model 3, which comprises Age, Km and Weight. This resulted with RMSE of 1548.81. The python script and model evaluation shown below.
+
+![32](https://user-images.githubusercontent.com/32251175/161194741-af7cba58-cc9f-4039-afa5-84752d786bef.PNG)
+
+This is a comparison of predicted values with actual values and the scatter plot for neural network regression model 3.
+
+![33](https://user-images.githubusercontent.com/32251175/161194797-c4e6471c-0559-4dda-b6e2-0704c79cd0c3.PNG)
+
+#### b. Evaluation
+
+![34](https://user-images.githubusercontent.com/32251175/161194847-8d8ae9c2-8c3c-457e-9843-3c288467405d.PNG)
+
+The table above summarises the results of four neural network predictive models, with price as the target variable. As explained in regression model evaluation, a lower RMSE is more preferred, which implies that the neural network regression model 1 is the most optimal neural network regression predictive model. 
+
+### Part 5. Model comparison
+
+![35](https://user-images.githubusercontent.com/32251175/161194938-3d743cdc-eac5-4ea3-983f-a973c1741a43.PNG)
+![36](https://user-images.githubusercontent.com/32251175/161194998-972f3d44-97b3-4a93-ace4-7ddbddee85e2.PNG)
+
+The graph above summarizes the results of three regression techniques (multiple linear/random decision tree/neural network) to predict car sales price from Toyota Corolla dataset. The accuracy of the predictive models are compared based on their RMSE. In terms of efficiency, the random forest and neural network regression technique is much more efficient compared to the multiple linear regression. From all of the above predictive models, the random forest regression technique model 1. has the lowest RMSE of 1375.09. The random decision tree algorithms also provide importance features and the relationships between the different variables, which helps to create more accurate models. One key highlights shows that 3 key features: Age, KM and Weight are the most importance features. Moreover, it appears that the results from random decision slightly outperformed the results from neural network models, by providing a more lower of RMSE. Consequently, the random forest tree technique model appears to be more suitable predictive modelling for the Toyota Corolla dataset from Carsales.
+
+
