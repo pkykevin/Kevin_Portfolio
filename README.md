@@ -1,7 +1,7 @@
 # Kevin Park          
 Welcome to my data science portfolio. I am passionate about data analytics, data visualization, and building machine learnig models.
 
-## Predictive models in category based on [Carsales](https://www.carsales.com.au) datasets
+## Predictive models in category based on Carsales datasets
 
 * This project is to build a tool to analyse, compare, predict and visualize the important features and price of different car categories or makes.
 * Build such predictive models to facilitate decision making for second hand car buyers and sellers.
