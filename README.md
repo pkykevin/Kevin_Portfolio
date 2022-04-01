@@ -4,7 +4,7 @@ Welcome to my data science portfolio. I am passionate about data analytics, data
 ## Project 1 - Predictive models in category based on [Carsales](https://www.carsales.com.au) datasets
 
 * This project is to build a tool to analyse, compare, predict and visualize the important features and price of different car categories or makes.
-* The aim of this project is to build such predictive models to facilitate decision making for second hand car buyers and sellers.
+* The aim is to build such predictive models to facilitate decision making for second hand car buyers and sellers.
 * Multiple Linear, Random Forest and Neural Network predictive modelling techniques were employed to create predictive models.
 * The study implemented predictive models on actual data from [Carsales](https://www.carsales.com.au) website.
 * We will observe contributing features in category into different levels of prestige - luxury sports, luxury and economy cars.
@@ -99,7 +99,38 @@ This is a comparison of predicted values with actual values and the scatter plot
 
 ![14](https://user-images.githubusercontent.com/32251175/160990039-e3961b8d-a212-4c8e-bb79-3c2a90a653e1.PNG)
 
-
 ##### 3) Regression Model 3.
 
+The attributes applied for regression model 3 comprises age, km and weight. This model resulted in an adjusted R-squared of 0.988 and Root Mean Square Error (RMSE) of 1957.55. The regression and model evaluation result is shown below.
 
+![15](https://user-images.githubusercontent.com/32251175/161185287-2d917a05-42d3-496c-8ca9-44d98d6f49e0.PNG)
+
+This is a comparison of predicted values with actual values and the scatter plot for regression model 3.
+
+![16](https://user-images.githubusercontent.com/32251175/161185340-7166cccb-db90-4920-8b8d-204cfaa999e7.PNG)
+
+#### b. Evaluation
+
+![17](https://user-images.githubusercontent.com/32251175/161185422-fd0a9aa1-9b78-4b71-9def-6903f2955718.PNG)
+
+The table above summarises the results of three linear regression technique predictive models based on the Toyota Corolla dataset. RMSE is used to measure the difference between predicted variable and the actual variable. Therefore, the lower RMSE would be preferred, which implies that the model 2 is the most optimal linear regression predictive model. 
+
+### Part 3. Regression Technique using Random Decision Tree
+
+#### a. Regression models
+
+In this section, random decision tree technique is applied for predictive modelling of Toyota Corolla dataset. This section summarises and evaluates four random decision tree predictive models to predict price.
+
+Prior to building the random decision tree regression models, the dataset was partitioned with ⅔ as the training data sample and ⅓ as the testing data. The trained dataset comprises of 1262 training data and 632 testing data. Then, the number of trees in the forest of 1,000 is selected to fit a number of decision tree classifiers.
+
+Decision trees makes split that maximize the decrease in impurity. By calculating the decrease in impurity for each feature across all trees we can know that feature importance. The Python script and figure of feature importance shown below.
+
+![18](https://user-images.githubusercontent.com/32251175/161185563-aa204a09-ad89-41fd-afc1-5db1044e0c9e.PNG)
+
+![19](https://user-images.githubusercontent.com/32251175/161185601-d80f513b-5cb4-42a3-a6c5-f16e0d9b6b5c.PNG)
+
+As can be seen from the graph, feature importance from Toyota Corolla shows that Age and KM are the highest features contributing to the final price followed by weight, engine size and fuel cost.
+
+##### 1) Regression Model 1.
+##### 2) Regression Model 2.
+##### 3) Regression Model 3.
