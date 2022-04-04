@@ -13,7 +13,7 @@ Welcome to my data science portfolio. I am passionate about data analytics, data
 
 #### A. Data extraction
 
-The sample dataset of Toyota Corolla extracted from [Carsales](https://www.carsales.com.au).  Python’s Beautiful Soup v4 library used to extract data into a form that can be imported. 
+The sample dataset of Toyota Corolla extracted from Carsales website.  Python’s Beautiful Soup v4 library used to extract data into a form that can be imported. 
 
 ![1](https://user-images.githubusercontent.com/32251175/160815871-c6367950-716f-4555-ada2-23d1bc7b30dd.PNG)
 
