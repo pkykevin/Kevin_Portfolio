@@ -316,7 +316,7 @@ The charts above shows all the feature importance using Random Forest regression
 
 ##### 1. Multiple Linear Regression
 
-The dataset comprises of 21 attributes related to 1809 Luxury cars which contains 3 car makes (1013 from BMW 3 series, 705 Mercedes-Benz E Class and 91 Audi A 8 series where extracted from Carsales site). 
+The dataset comprises of 21 attributes related to 1809 Luxury cars which contains 3 car makes (1013 from BMW 3 series, 705 Mercedes-Benz E Class and 91 Audi A 8 series where extracted from Carsales website). 
 
 ###### a. Regression Model 1.
 
@@ -395,5 +395,101 @@ The graph above illustrates all results of three regression techniques (multiple
 ![65](https://user-images.githubusercontent.com/32251175/161682780-a1c5b4ad-9631-4613-81a7-b157bbfd4959.PNG)
 
 The charts above shows all the feature importance using Random Forest regression, compared with Luxury, BMW 3 series and Mercedes-benz E Class car makes. The luxury cars dataset shows that Age and Weight are the most influential features to predict car sales price, come along with Gears, Fuel Cost and KM. However, BMW 3 series dataset appears that Age and KM are the significant factors contributing to the price more than Weight. It appears that Weight and Gears features are much lower importance compared to luxury cars and Mercedes-Benz E Class. It also shows that the most substantial features of used cars are Age and Weight in Mercedes-Benz E Class, which is similar to Luxury Cars data. However, Engine Size and Gears are the next substantial features for the price in Mercedes-Benz E Class, compared to Gears, Fuel Cost and KM in Luxury Cars. As you can see, KM is not an identical features for Luxury Cars and Mercedes-Benz E Class compared to BMW 3 series. Overall, all Luxury Cars, BMW 3 series and Mercedes-Benz E Class have different car factors vital to the used car prices. 
+
+#### C. Economy Cars
+
+The dataset comprises of 21 attributes related to 3992 Economy Cars which contains 3 car makes (2030 samples from Toyota Corolla, 1016 from Mazda 3 and 946 from Hyundai i30 where extracted from Carsales website). 
+
+##### 1. Multiple Linear Regression
+
+###### a. Regression Model 1.
+
+The first regression model technique predictive model has included all of the attributes in the selected variables identified previously section. This model resulted in a Root Mean Square Error (RMSE) of 2371.50. The regression and model evaluation result is shown below.
+
+![66](https://user-images.githubusercontent.com/32251175/161683820-dc0accc6-51ca-4cad-bafe-a992ab116629.PNG)
+
+###### b. Regression Model 2
+
+The attributes applied for regression model 2. comprises Age, KM, Fuel Capacity, Weight and Fuel Cost. This model resulted in a Root Mean Square Error (RMSE) of 2944.35. The regression and model evaluation result is shown below.
+
+![67](https://user-images.githubusercontent.com/32251175/161683839-9c4e2ec2-360f-4dc8-a727-c1e03ebfe652.PNG)
+
+###### c. Regression Model 3
+
+The attributes applied for regression model 3. comprises Age, KM, Weight and Fuel Cost. This model resulted in a Root Mean Square Error (RMSE) of 3284.61. The regression and model evaluation result is shown below.
+
+![68](https://user-images.githubusercontent.com/32251175/161683855-d0a14a76-b05c-4c0f-8f2e-154d82518061.PNG)
+
+##### 2. Random Forest Regression
+
+As can be seen from the graph, feature Importance for Economy Cars shows that Age and KM are the highest features contributing to the final price followed by Fuel Cost.
+
+![69](https://user-images.githubusercontent.com/32251175/161683865-7fbf2b14-a37c-4202-a0b4-f704b58952ca.PNG)
+
+###### a. Regression Model 1.
+
+The first decision tree predictive model is created by applying all selected variables and resulted with RMSE of 1420.28. The regression and model evaluation result is shown below.
+
+![70](https://user-images.githubusercontent.com/32251175/161684162-7546f348-5622-425f-a21e-1ac3f4e787c8.PNG)
+
+###### b. Regression Model 2
+
+The second decision tree predictive model is created by applying features that have an importance of more than 0.01. There are 9 selected variables of feature importances, which comprises of Age, KM, Fuel Capacity, Weight, Fuel Cost. This resulted with RMSE of 1418.63. The regression and model evaluation result is shown below.
+
+![71](https://user-images.githubusercontent.com/32251175/161684178-28ef8bb1-b640-41ee-a9b6-cc1b91c412ce.PNG)
+
+###### c. Regression Model 3
+
+The third decision tree predictive model is created by applying features that have an importance of more than 0.1. There are 4 selected variables of feature importances, which comprises of Age, KM, Fuel Cost and Weight. This resulted with RMSE of 1421.67. The regression and model evaluation result is shown below.
+
+![72](https://user-images.githubusercontent.com/32251175/161684193-413a41eb-a609-426d-a767-fa85c57a1b17.PNG)
+
+##### 3. Neural Network Regression
+
+###### a. Regression Model 1.
+
+The first neural network predictive model is created by applying all selected variables. This resulted with RMSE of 1582.81. The regression and model evaluation result is shown below.
+
+![73](https://user-images.githubusercontent.com/32251175/161684211-ba752ced-16f8-45f5-b395-de0a40dd15a2.PNG)
+
+###### b. Regression Model 2
+
+The second neural network predictive model is created by applying selected variables from random tree regression model 2, which comprises Age, KM, Fuel Capacity, Weight and Fuel Cost. This resulted with RMSE of 1569.02. The regression and model evaluation result is shown below.
+
+![74](https://user-images.githubusercontent.com/32251175/161684237-e19b1ed7-e13e-4864-a7de-f2357d057e08.PNG)
+
+###### c. Regression Model 3
+
+The third neural network predictive model is created by applying selected variables from random tree regression model 3, which comprises Age, KM, Weight and Fuel Cost. The regression and model evaluation result is shown below.
+
+![75](https://user-images.githubusercontent.com/32251175/161684259-acf1df95-a170-4327-a199-84e2b96072f2.PNG)
+
+##### 4. Model Comparison
+
+![76](https://user-images.githubusercontent.com/32251175/161684284-25221322-629a-4061-947e-8b95181ac42c.PNG)
+
+![77](https://user-images.githubusercontent.com/32251175/161684367-b64633c5-e4e9-41b3-99d8-e454ce46ca0d.PNG)
+
+The graph above summarizes the results of three regression techniques (multiple linear/random decision tree/neural network) to predict car sales price from Economy Cars dataset. The accuracy of the predictive models are compared based on their RMSE. In terms of efficiency, the random forest and neural network regression technique is much more efficient compared to the multiple linear regression. In addition, it appears that the results from random forest a little outperformed the results from neural network models, by providing a more lower of RMSE. From all of the above predictive models, the random forest regression technique model 2. has the lowest RMSE of 1418. Moreover, random forest shows that Age, KM and Fuel Cost are the most important features. Overall, the random forest predictive models appears to be more suitable predictive modelling for the Economy Cars from Carsales.
+
+![78](https://user-images.githubusercontent.com/32251175/161684538-bb4eda03-726c-45fc-8bc7-8f528f2e0adb.PNG)
+
+The graph above describes all results of three regression techniques (multiple linear/random decision tree/neural network) to predict car sales price from Economy Cars, Toyota Corolla and Mazda 3. The accuracy of the predictive models are compared based on their RMSE. When we go deep into more specific car makes like Toyota Corolla or Mazda 3 in Economy Cars, they  perform slightly different compared to Economy Cars dataset.  Although all three dataset shows that random forest and neural network outperformed from all results from multiple linear, by providing a more lower of RMSE. Random Forest in Economy Cars and Toyota Corolla appears lower RMSE than Neural Network models. However, in Mazda, the Neural Network technique performs better efficient compared to the random forest regression. Overall, the random forest model appears to be more suitable predictive modelling for Economy Cars, Toyota Corolla, on the other hand, neural network models is more suitable for Mazda 3. 
+
+![79](https://user-images.githubusercontent.com/32251175/161684557-98e81021-8162-4899-89e6-2ba9f5c459b7.PNG)
+
+The charts above describes all the feature importance using Random Forest regression, compared with Economy Cars, Toyota Corolla and Mazda 3 car makes. All three feature importance shows that the most substantial features contributing to the price are Age and KM. However, KM is more important features in Toyota Corolla (more than 0.2), compared to less than 0.2 in Economy Cars and Mazda 3. It appears that the most substantial features of used cars are Age, KM and Fuel Cost in Economy Cars. On the other hand, Toyota Corolla shows feature importance of Age, KM and Weight. Moreover, Age, KM, Weight and Fuel Cost are substantial features for the price in Mazda 3. Overall, all Economy Cars, Toyota Corolla and Mazda 3 have in common importance factors in Age and KM, but have different other car important factors contributing to the final price of used cars. 
+
+### Part 6 Conclusion
+
+ To summarize, it can be concluded that the performance of predictive modelling techniques and important features depends on car categories and makes. Accordingly, a good practice is to compare the performance of different predictive models to find the best one for the particular case in category and make. There are two approaches with Random Forest and Neural Network, which have the most potential to produce optimal regression models. As can see from the data, most of the used car data are predominantly non-linear relationships in Carsales, so multiple linear is always not suitable because it can only capture linear relationships. Both random forest and neural networks, have the ability to model linear as well as complex nonlinear relationships. An important finding in this research is that no single algorithm works best across all possible scenarios. The performance of predictive models varies depending on the application and dimensionality of the dataset depends on the car categories and individual makes. Moreover, important features contributing to the car prices give a variety according to each car category and makes, for example, feature importance of Luxury Sports - KM and Engine Size against feature importance of Ferrari - Age and KM. Following can be summarized the findings from this research.
+ 
+* Use of real data and modelling categories shows that the same model is not effective for all cars.
+
+* Predictive modelling technique performance depends on the car category and make.
+
+* Important features change according to each car category and make.
+
+However, there is often not enough time to test and optimize every algorithm in order to its quality in a specific criteria such as robustness, cost and time expenditure. For example, a model that performs very well with the data used to create it does not necessarily perform equally well with new data. There may contain some errors and outliers in which at any time and often by chances changes in the relationships can occur. The costs and time required for the build predictive models also can be important criteria to calculated and tested. We can expect to measure those criteria in further research.
 
 
