@@ -311,3 +311,89 @@ The graph above illustrates all results of three regression techniques (multiple
 ![51](https://user-images.githubusercontent.com/32251175/161207545-71c46221-e501-4980-8b7f-35f5035ad177.PNG)
 
 The charts above shows all the feature importance using Random Forest regression, compared with Luxury Sports, Lamborghini and Ferrari car makes. The luxury sports data shows that KM and Engine Size are the most influential features to predict car sales price. However, Lamborghini dataset appears that Engine Size is a significant factor contributing to the price more than KM. The weight and age of used cars are the next important characteristics in Lamborghini dataset. On the other hand, it appears that the most substantial features of used cars in Ferrari dataset are Age and KM, not Engine Size. As you can see, most of the Luxury Sports includes Lamborghini car makes, KM and Engine Size are the crucial features of used car sales, but not for Ferrari car makes. Overall, these charts shows that all Luxury Sports, Lamborghini and Ferrari have different car factors vital to the used car prices. 
+
+#### B. Luxury Cars
+
+##### 1. Multiple Linear Regression
+
+The dataset comprises of 21 attributes related to 1809 Luxury cars which contains 3 car makes (1013 from BMW 3 series, 705 Mercedes-Benz E Class and 91 Audi A 8 series where extracted from Carsales site). 
+
+###### a. Regression Model 1.
+
+The first regression model technique predictive model has included all of the attributes in the selected variables identified previously. This model resulted in a Root Mean Square Error (RMSE) of 16551.91. The regression and model evaluation result is shown below.
+
+![52](https://user-images.githubusercontent.com/32251175/161681829-ec4f666d-1611-409a-a46a-bde3ff07459f.PNG)
+
+###### b. Regression Model 2.
+
+The attributes applied for regression model 2. comprises Age, KM, Engine Size, Gears, Weight and Fuel Cost. This model resulted in a Root Mean Square Error (RMSE) of 19334.10. The regression and model evaluation result is shown below.
+
+![53](https://user-images.githubusercontent.com/32251175/161681929-b9eb3f19-c2c8-4937-ab93-535a8160d902.PNG)
+
+###### c. Regression Model 3.
+
+The attributes applied for regression model 3. comprises Age, KM and Weight. This model resulted in a Root Mean Square Error (RMSE) of 26543.85. The regression and model evaluation result is shown below.
+
+![54](https://user-images.githubusercontent.com/32251175/161681980-4762a5a1-2266-44dc-9bb5-f7af8f0b07aa.PNG)
+
+##### 2. Random Forest Regression
+
+As can be seen from the graph, feature Importance for Luxury shows that Age and Weight are the highest features contributing to the final price followed by Gears, Fuel Cost and KM.
+
+![55](https://user-images.githubusercontent.com/32251175/161682039-7f324430-2af6-40a3-9d17-8e2d3f10c3d0.PNG)
+
+###### a. Regression Model 1.
+
+The first decision tree predictive model is created by applying all selected variables and resulted with RMSE of 6176.01. The regression and model evaluation result is shown below.
+
+![56](https://user-images.githubusercontent.com/32251175/161682096-6f694b94-9f8b-485c-9f9b-f89bfd4f80fd.PNG)
+
+###### b. Regression Model 2.
+
+The second decision tree predictive model is created by applying features that have an importance of more than 0.01. There are 6 selected variables of feature importances, which comprises of Age, KM, Engine Size, Gears, Weight and Fuel Cost. This resulted with RMSE of 6216.75. The regression and model evaluation result is shown below.
+
+![57](https://user-images.githubusercontent.com/32251175/161682176-9f27f022-0b2a-46d9-8151-968b942fd150.PNG)
+
+###### c. Regression Model 3.
+
+The third neural network predictive model is created by applying selected variables from random tree regression model 3, which comprises Age, KM and Weight. This resulted with RMSE of 7941.43. The regression and model evaluation result is shown below.
+
+![58](https://user-images.githubusercontent.com/32251175/161682210-48d73930-61c6-4aa0-a608-c21225a8715d.PNG)
+
+##### 3. Neural Network Regression
+
+###### a. Regression Model 1.
+
+The first neural network predictive model is created by applying all selected variables. This resulted with RMSE of 6302.07. The regression and model evaluation result is shown below.
+
+![59](https://user-images.githubusercontent.com/32251175/161682288-87042b0b-4e68-4e1b-8c7b-0c0600c7769a.PNG)
+
+###### b. Regression Model 2.
+
+The second neural network predictive model is created by applying selected variables from random tree regression model 2, which comprises Age, KM, Engine Size, Gears, Weight and Fuel Cost. This resulted with RMSE of 6348.90. The regression and model evaluation result is shown below.
+
+![60](https://user-images.githubusercontent.com/32251175/161682331-64d93bca-5a00-406d-99fc-63cb3a4f77bc.PNG)
+
+###### c. Regression Model 3.
+
+The third neural network predictive model is created by applying selected variables from random tree regression model 3, which comprises Age, KM and Weight. This resulted with RMSE of 8248.36. The regression and model evaluation result is shown below.
+
+![61](https://user-images.githubusercontent.com/32251175/161682378-45526587-8d04-4c13-b1b7-f090fda9bf6d.PNG)
+
+##### 4. Model Comparison
+
+![62](https://user-images.githubusercontent.com/32251175/161682585-9067de9e-ed04-43c8-b420-267acba49c4c.PNG)
+
+![63](https://user-images.githubusercontent.com/32251175/161682670-ff8ca018-2f50-4008-ad9a-e6b15b83587e.PNG)
+
+The graph above summarizes the results of three regression techniques (multiple linear/random decision tree/neural network) to predict car sales price from Luxury dataset. The accuracy of the predictive models are compared based on their RMSE. In terms of efficiency, the random forest and neural network regression technique is much more efficient compared to the multiple linear regression. From all of the above predictive models, the random forest regression technique model 1. has the lowest RMSE of 6176, however both Random Forest and Neural Network predictive models perform almost identical. Random forest shows that Age, KM and Weight are the most important features in Luxury cars. Moreover, it appears that the results from random forest slightly outperformed the results from neural network models. Consequently, both Random Forest and Neural Network models appears to be more suitable predictive modelling for the Luxury car dataset from Carsales.
+
+![64](https://user-images.githubusercontent.com/32251175/161682723-e356df66-d131-4fa5-a44e-bce69a52169e.PNG)
+
+The graph above illustrates all results of three regression techniques (multiple linear/random decision tree/neural network) to predict car sales price from Luxury Cars, BMW 3 series and Mercedes-Benz E Class. The accuracy of the predictive models are compared based on their RMSE. When we go deep into more specific car makes like BMW 3 series or Mercedes-Benz E class in Luxury Cars, they  performs slightly difference compared to Luxury Cars dataset. Although all three dataset shows that random forest and neural network outperformed from all results from multiple linear, by providing a more lower of RMSE. Neural Network regression model 1 from BMW 3 series appears a little lower RMSE than Random Forest models. However, the random forest technique is slightly better efficient compared to the neural network regression in Mercedes-Benz E Class. Overall, the random forest and neural network technique model appears to be more suitable predictive modelling for all Luxury Cars, BMW 3 series and Mercedes-Benz E Class cars from Carsales.
+
+![65](https://user-images.githubusercontent.com/32251175/161682780-a1c5b4ad-9631-4613-81a7-b157bbfd4959.PNG)
+
+The charts above shows all the feature importance using Random Forest regression, compared with Luxury, BMW 3 series and Mercedes-benz E Class car makes. The luxury cars dataset shows that Age and Weight are the most influential features to predict car sales price, come along with Gears, Fuel Cost and KM. However, BMW 3 series dataset appears that Age and KM are the significant factors contributing to the price more than Weight. It appears that Weight and Gears features are much lower importance compared to luxury cars and Mercedes-Benz E Class. It also shows that the most substantial features of used cars are Age and Weight in Mercedes-Benz E Class, which is similar to Luxury Cars data. However, Engine Size and Gears are the next substantial features for the price in Mercedes-Benz E Class, compared to Gears, Fuel Cost and KM in Luxury Cars. As you can see, KM is not an identical features for Luxury Cars and Mercedes-Benz E Class compared to BMW 3 series. Overall, all Luxury Cars, BMW 3 series and Mercedes-Benz E Class have different car factors vital to the used car prices. 
+
+
